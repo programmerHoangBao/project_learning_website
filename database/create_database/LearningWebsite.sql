@@ -72,7 +72,7 @@ CREATE TABLE Question(
 CREATE TABLE Options_Question(
 	id_option CHAR(6) PRIMARY KEY,
     id_question CHAR(6) NOT NULL,
-    tests VARCHAR(1500) NOT NULL,
+    texts VARCHAR(1500) NOT NULL,
     CONSTRAINT FK_Options_Question FOREIGN KEY(id_question) REFERENCES Question(id_question)
 );
 
